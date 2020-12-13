@@ -19,18 +19,5 @@
 	</nav>
 	<main class="inline">
 		<div class="sub">
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
-			there are left-block<br>
 		</div>
 		<div class="content">

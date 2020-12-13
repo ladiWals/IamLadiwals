@@ -1,3 +1,3 @@
-<?php require __DIR__ . '/../../header.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ?>
 	<h1>Блог</h1>
-<?php require __DIR__ . '/../../footer.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/footer.php'; ?>
