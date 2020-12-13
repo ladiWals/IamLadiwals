@@ -3,7 +3,7 @@ body {
 	margin: 0;
     padding: 0;
 	background-image: url("/images/background.jpg");
-	font: 20px Arial;
+	font: 22px Arial;
 	color: white;
 }
 
@@ -11,13 +11,14 @@ nav {
 	font: italic 36px Arial;
 }
 
-main { 	
-	border: 3px solid black;
-	border-radius: 10px;
-	color: black;
-	background: white;
-	margin: 30px 100px 50px;
+main {
+	margin:30px auto; 
+	width:100%;
 }
+
+main.inline {
+	font-size: 0;
+	}
 
 footer {
 	text-align: center;
@@ -56,7 +57,6 @@ a:hover {
 /* СПИСКИ */
 ul {
 	margin: 50 0 0 60px;
-	color: red;
 }
 
 li {
@@ -70,6 +70,51 @@ li a {
 	margin: 3px 3px;
 	padding: 10px;
 	border: 4px solid #67d8ef; 
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+/*КЛАССЫ*/
+
+.inline div {
+	display: inline-block; 
+	vertical-align: top; 
+	font-size:16px; 
+}
+
+.sub {
+	color: #548eaa;
+	margin: 0 5px 0 10px;
+	background: #f7f7f7;
+	width:15%; 
+}
+
+.content { 	
+	width:65%;
+	margin: 0 5px 0 5px;
+	color: black;
+	background: white;
+}
+
+.author {
+	color: blue;
+	margin: 0 10px 0 5px;
+	background: white;
+	width:15%;
+}
+
+.author ul {
+	text-align: center;
+	margin: 0 0 0 0;
+}
+
+.author li a {
+	display: block;
+	list-style: none;
+	background-color: orange;
+	color: black;
+	margin: 3px 3px;
+	border: 0; 
 	border-radius: 4px;
 	text-decoration: none;
 }

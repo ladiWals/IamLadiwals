@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -17,3 +17,20 @@
 			<li><a href="/section/blog/">Блог</a></li>
 		</ul>
 	</nav>
+	<main class="inline">
+		<div class="sub">
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+			there are left-block<br>
+		</div>
+		<div class="content">

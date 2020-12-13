@@ -1,4 +1,3 @@
-<?php require('header.php'); ?>
+<?php require __DIR__ . '/../../header.php'; ?>
 	<h1>Блог</h1>
-	<h2><a href="/">Назад</a></h2>
-<?php require('footer.php'); ?>
+<?php require __DIR__ . '/../../footer.php'; ?>

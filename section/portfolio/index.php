@@ -1,13 +1,5 @@
-<DOCTYPE html>
-<html>
-
-<head>
-	<title>Портфолио</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="/styles/styles.css">
-</head>
-
-<body>
+<?php require __DIR__ . '/../../header.php'; ?>
+<main>
 	<h1>Портфолио</h1>
-	<h2><a href="/">Назад</a></h2>
-</body>
+</main>>
+<?php require __DIR__ . '/../../footer.php'; ?>
