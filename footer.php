@@ -1,10 +1,17 @@
 	</div>
 	<div class="author">
 		<ul>
-			<li><a>Авторизация</a></li>
-			<li><a>Регистрация</a></li>
-			<li><a>Восстановление</a></li>
+			<li><a href="/?auth=log">Авторизация</a></li>
+			<li><a href="/?auth=reg">Регистрация</a></li>
+			<li><a href="/?auth=reh">Выйти</a></li>
 		</ul>
+		<?php if($_GET['auth'] == 'log') {?>
+		<form action="/" method="POST">
+			<input id="login_id" size="12" name="login" placeholder="Логин">
+			<input id="password_id" size="12" name="password" type="password" placeholder="Пароль">
+			<input type="submit" value="Войти" name="authorizate"></td>
+		</form>
+		<?php }?>
 	</div>
 </main>
 <footer>

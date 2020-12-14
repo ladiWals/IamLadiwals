@@ -1,10 +1,12 @@
+<?php
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
 	<title>IamLadiwals</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="/styles/styles.css">
+	<link rel="stylesheet" href="/styles/styles.css" type="text/css">
 </head>
 
 <body>
@@ -19,5 +21,7 @@
 	</nav>
 	<main class="inline">
 		<div class="sub">
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br>
 		</div>
 		<div class="content">

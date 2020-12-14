@@ -18,7 +18,15 @@ main {
 
 main.inline {
 	font-size: 0;
-	}
+}
+
+form {
+	margin: 0 40px;
+}
+
+form input {
+	margin: 5px 0;
+}
 
 footer {
 	text-align: center;
@@ -39,24 +47,16 @@ h1 {
 }
 
 /* ССЫЛКИ */
-a {
-	background-color: #999;
-	margin: 3px 5px;
-	padding: 10px;
-	border: 3px solid #966; 
-	color: violet;
-	text-decoration: none;
-}
 
 a:hover {
 	text-decoration: none;
-	background-color: #222222;
+	background-color: #000;
 }
 
 
 /* СПИСКИ */
 ul {
-	margin: 50 0 0 60px;
+	margin: 30px 0 0 0;
 }
 
 li {
@@ -65,12 +65,12 @@ li {
 }
 
 li a {
-	background-color: #0d1117;
+	background-color: rgba(28, 29, 23, 0.9);
 	color: #0000ff;
 	margin: 3px 3px;
 	padding: 10px;
 	border: 4px solid #67d8ef; 
-	border-radius: 4px;
+	border-radius: 8px;
 	text-decoration: none;
 }
 
@@ -83,13 +83,15 @@ li a {
 }
 
 .sub {
+	border-radius: 4px;
 	color: #548eaa;
 	margin: 0 5px 0 10px;
 	background: #f7f7f7;
 	width:15%; 
 }
 
-.content { 	
+.content { 
+	border-radius: 4px;		
 	width:65%;
 	margin: 0 5px 0 5px;
 	color: black;
@@ -97,24 +99,33 @@ li a {
 }
 
 .author {
-	color: blue;
 	margin: 0 10px 0 5px;
-	background: white;
+	border-radius: 4px;
+	background-color: rgba(28, 29, 23, 0.7);
+	color: black;
 	width:15%;
 }
 
 .author ul {
-	text-align: center;
-	margin: 0 0 0 0;
+	margin: 20px 0;
+	padding: 0;
 }
 
 .author li a {
+	font-size: 20px;
+	text-align: center;
 	display: block;
 	list-style: none;
-	background-color: orange;
-	color: black;
-	margin: 3px 3px;
-	border: 0; 
+	background-color: #282923;
+	color: #67d8ef;
+	margin: 7px 40px;
+	padding: 10px;
+	border: 1px solid #67d8ef; 
 	border-radius: 4px;
 	text-decoration: none;
+}
+
+.author li a:hover {
+	padding: 8px;
+	border: 3px solid #67d8ef; 
 }
