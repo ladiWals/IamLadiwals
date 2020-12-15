@@ -5,8 +5,12 @@
 			<li><a href="/?auth=reg">Регистрация</a></li>
 			<li><a href="/?auth=reh">Выйти</a></li>
 		</ul>
-		<?php if($_GET['auth'] == 'log'){ require $_SERVER['DOCUMENT_ROOT'] . '/authoriz/logForm.php'; }?>
-		<?php if($_GET['auth'] == 'reg'){ require $_SERVER['DOCUMENT_ROOT'] . '/authoriz/regForm.php'; }?>
+		<?php if(isset($_GET['auth']) && $_GET['auth'] == 'log'){ 
+			require $_SERVER['DOCUMENT_ROOT'] . '/authoriz/logForm.php'; 
+		}?>
+		<?php if(isset($_GET['auth']) && $_GET['auth'] == 'reg'){ 
+			require $_SERVER['DOCUMENT_ROOT'] . '/authoriz/regForm.php'; 
+		}?>
 	</div>
 </main>
 <footer>

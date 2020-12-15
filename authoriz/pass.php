@@ -1,5 +1,5 @@
 <?php
-$password = [
+$pass = [
 	"mypassword",
 	"12345678",
 	"veryhardpass",

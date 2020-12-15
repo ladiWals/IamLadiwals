@@ -8,8 +8,12 @@ var_dump($_GET);
 echo PHP_EOL . PHP_EOL;
 echo "POST:";
 var_dump($_POST); 
+if($tryAuth){
+	echo loggy($_POST['login'], $_POST['password']);
+}
 ?>
 </pre>
+
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br>
