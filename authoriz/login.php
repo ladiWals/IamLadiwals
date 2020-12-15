@@ -1,5 +1,6 @@
 <?php
-$login = [
+
+$loginBD = [
 	"andrey",
 	"alex",
 	"vladislav",
@@ -8,4 +9,3 @@ $login = [
 	"fedor",
 	"mihail",
 ];
-?>
