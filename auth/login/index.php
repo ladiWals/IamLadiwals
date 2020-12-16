@@ -27,7 +27,26 @@ if (isset($_POST['authorizate'])){
 </head>
 
 <body>
-	это будет страница авторизации
+	<div class="rectangle">
+		<div class="canvas">
+			<h1> Войти </h1>
+			<form action="/auth/login" method="POST">
+				<input name="login" placeholder="Логин">
+				<input name="password" type="password" placeholder="Пароль">
+				<input type="submit" value="Войти">
+			</form>
+		</div>
+		<div class="addition">
+			Нет аккаунта? <a href="/auth/register"> Создать </a>
+		</div>
+		<div class="footer">
+			<ul>
+				<li>Русский</li>
+				<li>About</li>
+				<li><a href="/"> Главная </a></li>
+			</ul>
+		</div>
+	</div>
 </body>
 
 </html>

@@ -10,13 +10,22 @@
 	<div class="rectangle">
 		<div class="canvas">
 			<h1> Регистрация </h1>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<form action="/auth/register" method="POST">
+				<input name="login" placeholder="Логин">
+				<input name="password" type="password" placeholder="Пароль">
+				<input name="doublePass" type="password" placeholder="Подтвердите пароль">
+				<input type="submit" value="Зарегестрировать">
+			</form>
 		</div>
-		<div class="additional">
-			ссылка, если уже есть аккаунт
+		<div class="addition">
+			Есть аккаунт? <a href="/auth/login"> Авторизуйся </a>
 		</div>
 		<div class="footer">
-			а это футер со всем говном
+			<ul>
+				<li>Русский</li>
+				<li>About</li>
+				<li><a href="/"> Главная </a></li>
+			</ul>
 		</div>
 	</div>
 </body>
