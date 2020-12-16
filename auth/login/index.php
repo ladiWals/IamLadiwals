@@ -22,6 +22,8 @@ if (isset($_POST['authorizate'])){
 <html>
 
 <head>
+	<title> Авторизация </title>
+	<link rel="stylesheet" href="/styles/authStyles.css" type="text/css">
 </head>
 
 <body>
