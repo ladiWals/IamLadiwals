@@ -5,7 +5,7 @@
 			<li><a href="/?auth=reg">Регистрация</a></li>
 			<li><a href="/?auth=reh">Выйти</a></li>
 		</ul>
-		<?php if(isset($_GET['auth']) && $_GET['auth'] == 'log'){ 
+		<?php if((isset($_GET['auth']) && $_GET['auth'] == 'log') || $authError){ 
 			require $_SERVER['DOCUMENT_ROOT'] . '/authoriz/logForm.php'; 
 		}?>
 		<?php if(isset($_GET['auth']) && $_GET['auth'] == 'reg'){ 

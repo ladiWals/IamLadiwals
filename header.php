@@ -1,5 +1,5 @@
 <?php
-$Auth = false;
+$auth = false;
 $tryAuth = false;
 if (isset($_POST['authorizate'])){
 	require $_SERVER['DOCUMENT_ROOT'] . '/authoriz/authFunc.php'; 

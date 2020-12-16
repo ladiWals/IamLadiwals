@@ -10,19 +10,34 @@ function loggy($log, $pas)
 	$eml = empty($log);
 	$emp = empty($pas);
 	$logIndex = array_search($log, $loginBD);
+
 	if ($eml && $emp){
-		return "Введите логин и пароль";
+		return [false, "Введите логин и пароль"];
 	} elseif ($eml && !$emp){
-		return "Введите логин";
+		return [false, "Введите логин"];
 	} elseif (!$eml && $emp){
-		return "Введите пароль";
+		return [false, "Введите пароль"];
 	} elseif (!$eml && !$emp && $logIndex == false){
-		return "Пользователь не найден";
-	} elseif (!$eml && !$emp && $logIndex !== false && $pas == $passwordBD[$logIndex]){
-		return "Успешная Авторизация";
+		return [false, "Пользователь не найден"];
 	} elseif (!$eml && !$emp && $logIndex !== false && $pas !== $passwordBD[$logIndex]){
-		return "Неправильный пароль";
+		return [false, "Неправильный пароль"];
+	} elseif (!$eml && !$emp && $logIndex !== false && $pas == $passwordBD[$logIndex]){
+		return [true, "Успешная Авторизация"];
 	} 
+}
+
+function obrezka($str, $clippingSize = 12)
+{
+	if(strlen($str) > $clippingSize){
+		return substr($str, 0, $clippingSize) . "...";
+	} 
+	return $str;
+}
+
+function arraySort($array, $key = 'sort', $sort = SORT_ASC)
+{
+	array_multisort(array_column($array, 'sort'), $sort, $array);
+	return $array;
 }
 
 ?>

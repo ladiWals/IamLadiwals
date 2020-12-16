@@ -9,7 +9,7 @@ echo PHP_EOL . PHP_EOL;
 echo "POST:";
 var_dump($_POST); 
 if($tryAuth){
-	var_dump(loggy($_POST['login'], $_POST['password']));
+	var_dump(loggy($_POST['login'], $_POST['password'])[1]);
 }
 ?>
 </pre>
