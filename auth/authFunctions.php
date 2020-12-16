@@ -1,7 +1,7 @@
 <?php
 
-require $_SERVER['DOCUMENT_ROOT'] . '/authoriz/login.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/authoriz/pass.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/auth/login.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/auth/pass.php';
 
 function loggy($log, $pas) 
 {

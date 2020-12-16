@@ -1,9 +1,9 @@
 	</div>
 	<div class="author">
 		<ul>
-			<li><a href="/auth/login">Авторизация</a></li>
-			<li><a href="/auth/register">Регистрация</a></li>
-			<li><a href="/">Выйти</a></li>
+			<li><a href="/auth/login"> Авторизация </a></li>
+			<li><a href="/auth/register"> Регистрация </a></li>
+			<li><a href="/"> Выход </a></li>
 		</ul>
 	</div>
 </main>

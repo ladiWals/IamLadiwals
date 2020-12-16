@@ -72,3 +72,18 @@ ul li {
 	text-decoration: none;
 	color: #558cb7;
 }
+
+.authResult {
+	font-size: 17px;
+	font-style: italic ;
+	margin: 15px 0 0 0;
+	text-align: center;
+}
+
+.error {
+	color: red;
+}
+
+.success {
+	color: green;
+}

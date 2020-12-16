@@ -18,7 +18,7 @@
 			</form>
 		</div>
 		<div class="addition">
-			Есть аккаунт? <a href="/auth/login"> Авторизуйся </a>
+			Есть аккаунт? <a href="/auth/login"> Авторизоваться </a>
 		</div>
 		<div class="footer">
 			<ul>
