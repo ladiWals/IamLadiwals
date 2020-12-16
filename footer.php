@@ -1,16 +1,10 @@
 	</div>
 	<div class="author">
 		<ul>
-			<li><a href="/?auth=log">Авторизация</a></li>
-			<li><a href="/?auth=reg">Регистрация</a></li>
-			<li><a href="/?auth=reh">Выйти</a></li>
+			<li><a href="/auth/login">Авторизация</a></li>
+			<li><a href="/auth/register">Регистрация</a></li>
+			<li><a href="/">Выйти</a></li>
 		</ul>
-		<?php if((isset($_GET['auth']) && $_GET['auth'] == 'log') || $authError){ 
-			require $_SERVER['DOCUMENT_ROOT'] . '/authoriz/logForm.php'; 
-		}?>
-		<?php if(isset($_GET['auth']) && $_GET['auth'] == 'reg'){ 
-			require $_SERVER['DOCUMENT_ROOT'] . '/authoriz/regForm.php'; 
-		}?>
 	</div>
 </main>
 <footer>
