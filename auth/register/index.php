@@ -1,3 +1,16 @@
+<?php
+
+$tryReg = false;
+
+// Действия при нажатии кнопки "Зарегестрировать"
+if (isset($_POST['regButton'])){
+	require $_SERVER['DOCUMENT_ROOT'] . '/auth/authFunctions.php'; 
+	$regResult = reggy($_POST['login'], $_POST['password'], $_POST['doublePass']);
+	$tryReg = true;
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -14,8 +27,13 @@
 				<input name="login" placeholder="Логин">
 				<input name="password" type="password" placeholder="Пароль">
 				<input name="doublePass" type="password" placeholder="Подтвердите пароль">
-				<input type="submit" value="Зарегестрировать">
+				<input name="regButton" type="submit" value="Зарегестрировать">
 			</form>
+			<?php if($tryReg){ ?>
+				<div class="<?=$regResult[0] ? 'authResult success' : 'authResult error'?>">
+					<?=$regResult[1]?>
+				</div>
+				<?php } ?>
 		</div>
 		<div class="addition">
 			Есть аккаунт? <a href="/auth/login"> Авторизоваться </a>

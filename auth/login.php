@@ -1,6 +1,6 @@
 <?php
 
-$loginBD = [
+$loginDB = [
 	"andrey",
 	"alex",
 	"vladislav",

@@ -1,13 +1,13 @@
 <?php
 
 $auth = false;
-$tryAuth = false;
+$tryLog = false;
 
 // Действия при нажатии кнопки "Войти"
 if (isset($_POST['loginButton'])){
 	require $_SERVER['DOCUMENT_ROOT'] . '/auth/authFunctions.php'; 
 	$logResult = loggy($_POST['login'], $_POST['password']);
-	$tryAuth = true;
+	$tryLog = true;
 }
 
 ?>
@@ -32,7 +32,7 @@ if (isset($_POST['loginButton'])){
 					value = "<?= isset($_POST['password']) ? $_POST['password'] : ""?>">
 				<input name="loginButton" style="padding: 12px 102.5px;" type="submit" value="Войти">
 			</form>
-			<?php if ($tryAuth){ ?>
+			<?php if ($tryLog){ ?>
 				<div class="<?=$logResult[0] ? 'authResult success' : 'authResult error'?>">
 					<?=$logResult[1]?>
 				</div>
