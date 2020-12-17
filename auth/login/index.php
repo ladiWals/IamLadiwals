@@ -29,7 +29,7 @@ if (isset($_POST['loginButton'])){
 			<form action="/auth/login" method="POST">
 				<input name="login" placeholder="Логин" value = "<?= isset($_POST['login']) ? $_POST['login'] : ""?>">
 				<input name="password" type="password" placeholder="Пароль"
-				value = "<?= isset($_POST['password']) ? $_POST['password'] : ""?>">
+					value = "<?= isset($_POST['password']) ? $_POST['password'] : ""?>">
 				<input name="loginButton" style="padding: 12px 102.5px;" type="submit" value="Войти">
 			</form>
 			<?php if ($tryAuth){ ?>
@@ -45,8 +45,10 @@ if (isset($_POST['loginButton'])){
 
 		<div class="footer">
 			<ul>
-				<li>Русский</li>
-				<li>About</li>
+				<li><a href="/images/armjan.jpeg"> 
+					Русский 
+				</a></li>
+				<li><a href="/images/about.jpeg"> About </a></li>
 				<li><a href="/"> Главная </a></li>
 			</ul>
 		</div>

@@ -22,8 +22,10 @@
 		</div>
 		<div class="footer">
 			<ul>
-				<li>Русский</li>
-				<li>About</li>
+				<li><a href="/images/armjan.jpeg"> 
+					Русский 
+				</a></li>
+				<li><a href="/images/about.jpeg"> About </a></li>
 				<li><a href="/"> Главная </a></li>
 			</ul>
 		</div>
